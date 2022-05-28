@@ -1,45 +1,64 @@
-// Переменные
-$main-text-color: #2E2520;
-$main-bg-button-color: #AB816C;
-$main-text-button-color: #ffffff;
-// 
+html {
+    box-sizing: border-box;
+}
 
-body{
-    color: $main-text-color;
-    background-color: #ffffff;
-    font-family: "Montserrat",sans-serif;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.container {
-    // min-width: 280px;
-    max-width: 480px;
-    // Пока что это примерное значение для растяжения, нужно будет обсудить
-    margin-left: auto;
-    margin-right: auto;
-    outline: red 1px solid;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-.section-title {
-    font-family: "Caveat Brush", sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    text-align: center;
-
-    color: $main-text-color;
+address {
+    font-style: normal;
 }
 
-.main-text {
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: var(--body-color);
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    text-align: center;
+    color: var(--text-color);
 
-    color: $main-text-color;
+    @media screen and (min-width: $desktop) {
+        background-color: var(--second-body-color);
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+.title {
+    font-family: 'Caveat Brush', sans-serif;
+    font-weight: 400;
+    color: $title-color;
 }
