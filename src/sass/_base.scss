@@ -57,3 +57,17 @@ body {
     font-weight: 400;
     // color: $title-color;
 }
+
+button {
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 1.27;
+    border-radius: 25px;
+    
+    font-family: 'Caveat Brush', sans-serif;;
+    color: $button-text-color;
+    background-color: $button-bg-color;
+
+    cursor: pointer;
+  }
