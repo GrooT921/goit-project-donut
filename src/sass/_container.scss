@@ -4,6 +4,7 @@
   margin-right: auto;
   margin-left: auto;
 
+<<<<<<< Updated upstream
   @media screen and (min-width: $mobile) {
     width: 278px;
   }
@@ -14,5 +15,17 @@
 
   @media screen and (min-width: $desktop) {
     width: 1132px;
+=======
+  @media screen and (max-width: $mobile) {
+    max-width: 320px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    max-width: 744px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    max-width: 1074px;
+>>>>>>> Stashed changes
   }
 }
