@@ -1,19 +1,41 @@
+// .container {
+//   padding-right: 20px;
+//   padding-left: 20px;
+//   margin-right: auto;
+//   margin-left: auto;
+
+
+//   @media screen and (max-width: $mobile) {
+//     max-width: 320px;
+//   }
+
+//   @media screen and (max-width: $tablet) {
+//     max-width: 744px;
+//   }
+
+//   @media screen and (max-width: $desktop) {
+//     max-width: 1074px;
+//   }
+// }
+
+
+// більш адаптивний контейнер
 .container {
-  padding-right: 20px;
-  padding-left: 20px;
+  max-width: $mobile;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 
-
-  @media screen and (max-width: $mobile) {
-    max-width: 320px;
+  @media screen and (min-width:$mobile) and (max-width: $mobile-max) {
+    max-width: 380px;
   }
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     max-width: 744px;
   }
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     max-width: 1074px;
   }
 }

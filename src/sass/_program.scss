@@ -4,12 +4,25 @@
     display: flex;
     justify-content: space-between;
   }
-
 }
 
-// .program__features {
-//   width: 390px;
-// }
+.program__content {
+
+  @media screen and(min-width:$tablet) {
+    flex-basis: 50%;
+    ;
+  }
+}
+
+.program__features {
+
+  @media screen and(min-width:$tablet) {
+    flex-basis: 45%;
+  }
+
+  // width: 390px;
+}
+
 
 .program__title {
   text-align: center;
@@ -21,16 +34,15 @@
     font-size: 36px;
     line-height: 1.81;
   }
+
+  @media screen and(min-width:$desktop) {
+    margin-bottom: 20px;
+  }
 }
 
 .program__list {
   padding-top: 8px;
-
-  @media screen and(min-width:$tablet) {}
-
-  @media screen and(min-width:$desktop) {
-    padding: 20px 0 16px 0;
-  }
+  justify-content: space-around;
 
 }
 
@@ -45,12 +57,21 @@
 }
 
 .content__list {
-  padding: 60px 0 20px 0;
+  // padding: 60px 0 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+
+  // @media screen and(min-width:$tablet) {
+  //   padding: 60px 0 50px 0;
+  // }
+
+  //   @media screen and(min-width:$desktop) {
+  //     padding: 60px 0 78px 0;
+  //   }
   // max-width: 500px;
 }
+
 
 .content__img {
   position: absolute;
@@ -63,6 +84,7 @@
 .content__item {
   width: 130px;
   height: 130px;
+  margin-top: 60px;
   padding-top: 50px;
   position: relative;
   text-align: center;
@@ -75,6 +97,7 @@
   @media screen and(min-width:$tablet) {
     width: 152px;
     height: 152px;
+    margin-top: 50px;
     padding-top: 53px;
   }
 
@@ -82,11 +105,20 @@
     width: 180px;
     height: 180px;
     padding-top: 65px;
+    margin-top: 80px;
   }
 }
 
 .content__item:nth-child(even) {
-  margin-top: 59px;
+  top: 30px;
+
+  @media screen and(min-width:$tablet) {
+    top: 54px;
+  }
+
+  @media screen and(min-width:$desktop) {
+    top: 80px;
+  }
 }
 
 
@@ -105,6 +137,7 @@
 }
 
 .content__title {
+  text-align: center;
   font-size: 18px;
   line-height: 1.22;
 
@@ -156,6 +189,10 @@
   color: $button-bg-color;
   background-color: transparent;
   cursor: pointer;
+
+  @media screen and(min-width:$desktop) {
+    display: none;
+  }
 
   // &:hover,
   // &:focus {
