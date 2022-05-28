@@ -1,0 +1,42 @@
+  // fonts:
+
+  // Caveat Brush- 400;
+  // Montserrat- 400, 500, 500 italic;
+  
+  
+  // color palette:
+
+
+  // цвет фона мобильной версии: #FFFFFF;
+  // цвет фона десктопной версии: #FFFFF9;
+  // цвет текста заголовка: #2E2520;
+  // цвет текста подзаголовков: #2E2520;                    
+  // цвет текста: #2E2520;
+  // текст фона кнопок: #AB816C;
+  // текст кнопок: #FFFFFF;
+  // цвет иконок социальных сетей и контактов: #2E2520; (иконка локации: #000000;)
+  // цвет текста заголовков в карточках: #000000;
+  // цвет иконок в карточках: #AB816C;
+  // цвет плейсхолдера: rgba(171, 129, 108, 0.5);
+  // цвет фона мобильного меню: rgba(254, 243, 228, 0.9);
+
+
+  // colors:
+
+  $primary-body-color: #FFFFFF;
+  $secondary-body-color:#FFFFF9;
+  $text-color:#2E2520;
+  $title-color: #2e2520;
+  $button-bg-color: #ab816c;
+  $button-text-color: #ffffff;
+  $icon-accent-color: #674d40;
+  $menu-bg-color: rgba(254, 243, 228, 0.9);
+
+
+  // breakpoints:
+
+$mobile: 320px;
+$mobile-max: 767px;
+$tablet: 768px;
+$tablet-max: 1279px;
+$desktop: 1280px;
