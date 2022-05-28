@@ -4,8 +4,13 @@
         <p class="contact__text">We will answer any question!</p>
         <form autocomplete="off" class="contact-form">
             <ul class="contact-form__list">
-                <li class="contact-form__item"><input class="contact-form__input" type="email" name="email" placeholder="Email"></li>
-                <li class="contact-form__item"><input class="contact-form__input" type="text" name="question" placeholder="Type your question"></li>
+                <li class="contact-form__item">
+                    <div>
+                        <input class="contact-form__input" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email">
+                        <span class="contact-form__error-message">This field must contain E-Mail in the format example@site.com</span>
+                    </div>
+                </li>
+                <li class="contact-form__item"><input class="contact-form__input" type="text" name="question" maxlength="30" placeholder="Type your question"></li>
             </ul>
             <button type="submit" class="main-button">Send</button>
         </form>
