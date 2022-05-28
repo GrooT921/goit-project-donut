@@ -1,4 +1,45 @@
+// Переменные
+$main-text-color: #2E2520;
+$main-bg-button-color: #AB816C;
+$main-text-button-color: #ffffff;
+// 
+
 body{
-    line-height: 4.0;
-    color: tomato;
+    color: $main-text-color;
+    background-color: #ffffff;
+    font-family: "Montserrat",sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    // min-width: 280px;
+    max-width: 480px;
+    // Пока что это примерное значение для растяжения, нужно будет обсудить
+    margin-left: auto;
+    margin-right: auto;
+    outline: red 1px solid;
+}
+
+.section-title {
+    font-family: "Caveat Brush", sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+
+    color: $main-text-color;
+}
+
+.main-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+
+    color: $main-text-color;
 }
