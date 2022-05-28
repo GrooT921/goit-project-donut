@@ -1,26 +1,44 @@
 <section class="registration">
-    <div class="container">
-        <h2 class="title registration--title">Registration</h2>
-    <div>
-        <h3>May 23,</h3>
-        <h3>11:00</h3>
-        <h3>New York</h3>
-    </div>
-    <span>$ 699</span>
-    <p class="registration__text">Apply your personal info for registration</p>
-    </div>
-    <form autocomplete="off">
-        <ul>
-            <li>
-                <input type="text" name="name" placeholder="Your name">
-            </li>
-            <li>
-                <input type="number" name="phone" placeholder="Phone number">
-            </li>
-            <li>
-                <input type="email" name="email" placeholder="Email">
-            </li>
+  <div class="container">
+    <div class="registration__container">
+      <h2 class="title registration__title">Registration</h2>
+        <ul class="registration__time registration__details">
+          <li>May 23, 11:00</li>
+          <li>New York</li>
         </ul>
-        <button type="submit">Register</button>
-    </form>
+      <span class="registration__details">$ 699</span>
+      <p class="registration__text">
+        Apply your personal info for registration
+      </p>
+      <form autocomplete="off" class="registration-form">
+        <ul class="registration-form__list">
+          <li class="registration-form__item">
+            <input
+              class="registration-form__input"
+              type="text"
+              name="name"
+              placeholder="Your name"
+            />
+          </li>
+          <li class="registration-form__item">
+            <input
+              class="registration-form__input"
+              type="number"
+              name="phone"
+              placeholder="Phone number"
+            />
+          </li>
+          <li class="registration-form__item">
+            <input
+              class="registration-form__input"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </li>
+        </ul>
+        <button type="submit" class="registration-button">Register</button>
+      </form>
+    </div>
+  </div>
 </section>
