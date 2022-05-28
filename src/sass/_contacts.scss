@@ -1,3 +1,52 @@
-.contact-form{
-    background-color: aqua;
+.contact--title {
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
 }
+
+.contact__text {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.contact-form__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.contact-form__item {
+    &:last-child {
+        margin-top: 20px;
+    }
+}
+
+.contact-form__input {
+    border: 0 transparent solid;
+    border-bottom: 1px rgba(171, 129, 108, 1) solid;
+
+    &::placeholder {
+        color: rgba(171, 129, 108, 0.5);
+    }
+}
+
+.main-button {
+    margin-top: 32px;
+    padding: 8px 57px;
+}
+// button {
+//      font-size: 18px;
+//      line-height: 1.27;
+//      border-radius: 25px;
+//     text-align: center;
+//     font-family: 'Caveat Brush', sans-serif;;
+//     color: $button-text-color;
+//     background-color: $button-bg-color;
+//     /* отображаем курсор в виде руки при наведении; некоторые
+//     считают, что необходимо оставлять стрелочный вид для кнопок */
+//     cursor: pointer;
+//   }
