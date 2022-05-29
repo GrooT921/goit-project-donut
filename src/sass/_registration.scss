@@ -3,6 +3,7 @@
 }
 
 .registration__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +15,7 @@
 }
 
 .registration__title {
+  position: absolute;
   font-size: 24px;
   text-align: center;
 }
@@ -26,7 +28,7 @@
 }
 
 .registration__details {
-  margin-top: 20px;
+  margin-top: 40px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -41,25 +43,25 @@
 }
 
 .registration-form {
-    text-align: center;
-    margin-top: 20px;
-    width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .registration-form__list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
-.registration-form__input{
-    width: 100%;
-    border: 0 transparent solid;
-    border-bottom: 1px rgba(171, 129, 108, 1) solid;
+.registration-form__input {
+  width: 100%;
+  border: 0 transparent solid;
+  border-bottom: 1px rgba(171, 129, 108, 1) solid;
 
-    &::placeholder {
-        color: rgba(171, 129, 108, 0.5);
-    }
+  &::placeholder {
+    color: rgba(171, 129, 108, 0.5);
+  }
 }
 
 // .registration-button {
