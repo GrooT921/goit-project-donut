@@ -1,12 +1,13 @@
 <section class="about">
     <div class="about__container container">
         <picture class="about__picture-set">
-            <source media="(min-width= 1280px)"
-                srcset="./images/about-us/desktop/box_desktop.png 1x, ./images/about-us/desktop/box_desktop@2x.png 2x">
-            <source media="(min-width= 768px)"
-                srcset="./images/about-us/tablet/box_tablet.png 1x, ./images/about-us/tablet/box_tablet@2x.png 2x">
-            <source media="(min-width= 320px)"
-                srcset="./images/about-us/mobile/box_mobile.png 1x, ./images/about-us/mobile/box_mobile@2x.png 2x">
+            <source
+                srcset="./images/about-us/desktop/box_desktop.png 1x, ./images/about-us/desktop/box_desktop@2x.png 2x"
+                media="(min-width: 1280px)">
+            <source srcset="./images/about-us/tablet/box_tablet.png 1x, ./images/about-us/tablet/box_tablet@2x.png 2x"
+                media="(min-width: 768px)">
+            <source srcset="./images/about-us/mobile/box_mobile.png 1x, ./images/about-us/mobile/box_mobile@2x.png 2x"
+                media="(max-width: 767.98px)">
             <img class="about__image" src="./images/about-us/desktop/box_desktop.png" alt="Coffee and donut">
         </picture>
 
@@ -32,7 +33,7 @@
                     you will
                     enjoy our cooking atmosphere!
                 </p>
-                <button class="about__button" type=" button" data-btn-close>
+                <button type="button" class="about__button" data-btn-close>
                     Less
                 </button>
             </div>
