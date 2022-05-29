@@ -3,9 +3,9 @@
         <picture class="about__picture-set">
             <source media="(min-width= 1280px)"
                 srcset="./images/about-us/desktop/box_desktop.png 1x, ./images/about-us/desktop/box_desktop@2x.png 2x">
-            <source media="(min-width= 1280px)"
+            <source media="(min-width= 768px)"
                 srcset="./images/about-us/tablet/box_tablet.png 1x, ./images/about-us/tablet/box_tablet@2x.png 2x">
-            <source media="(min-width= 1280px)"
+            <source media="(min-width= 320px)"
                 srcset="./images/about-us/mobile/box_mobile.png 1x, ./images/about-us/mobile/box_mobile@2x.png 2x">
             <img class="about__image" src="./images/about-us/desktop/box_desktop.png" alt="Coffee and donut">
         </picture>
@@ -25,15 +25,17 @@
             </p>
 
             <button class="about__button" type="button" data-btn-open>Read more</button>
-            <p class="about__description about__read-more-text">
-                We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and
-                believe
-                you will
-                enjoy our cooking atmosphere!
-            </p>
-            <button class="about__button" type=" button" data-btn-close>
-                Less
-            </button>
+            <div class="backdrop is-hidden" data-btn>
+                <p class="about__description about__description--nomargin about__read-more-text">
+                    We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and
+                    believe
+                    you will
+                    enjoy our cooking atmosphere!
+                </p>
+                <button class="about__button" type=" button" data-btn-close>
+                    Less
+                </button>
+            </div>
         </div>
     </div>
 </section>

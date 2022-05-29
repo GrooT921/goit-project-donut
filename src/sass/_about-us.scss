@@ -1,27 +1,30 @@
-.about__container{
+.about__container {
 
     @media screen and(min-width:$tablet) {
         display: flex;
-        justify-content: space-between;
     }
 }
 
-.about__image{
+.about__image {
 
     @media screen and(max-width:$mobile-max) {
-            margin-bottom: 16px;
-        }
-    
-    // @media screen and(min-width:$tablet) {
-    //     margin-right: 32px;
-    // }
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-    // @media screen and(min-width:$desktop) {
-    //     margin-right: 140px;
-    // }
+    @media screen and (min-width:$tablet) {
+        width: 336px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        width: 100%;
+    }
 }
 
-.about__content{
+.about__content {
+    margin-top: auto;
+    margin-bottom: auto;
 
     @media screen and(min-width:$tablet) {
         width: 336px;
@@ -30,11 +33,13 @@
 
     @media screen and(min-width:$tablet-max) {
         width: 392px;
-        padding-right: 125px;
+        margin-left: 140px;
     }
 }
 
 .about__title {
+    font-size: 24px;
+    line-height: 1.25;
     @media screen and(max-width:$mobile-max) {
         margin-bottom: 10px;
         text-align: center;
@@ -43,15 +48,26 @@
     @media screen and(min-width:$tablet) {
         margin-bottom: 16px;
     }
+
+    @media screen and(min-width:$desktop) {
+        font-size: 36px;
+        line-height: 1.8;
+    }
 }
 
-.about__description{
+.about__description {
     margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.25;
+
+    @media screen and(min-width:$desktop) {
+        font-size: 18px;
+        line-height: 1.222;
+    }
 }
 
 
 .about__button {
-    margin-top: 16px;
     font-size: 18px;
     border: none;
     font-family: 'Caveat Brush';
@@ -60,6 +76,10 @@
     color: $button-bg-color;
     background-color: transparent;
     cursor: pointer;
+
+    @media screen and(min-width:$desktop) {
+            display: none;
+        }
 
     // &:hover,
     // &:focus {
