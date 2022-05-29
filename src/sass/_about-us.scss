@@ -1,6 +1,7 @@
 .about__container {
 
     @media screen and(min-width:$tablet) {
+        justify-content: space-between;
         display: flex;
     }
 }
@@ -28,12 +29,10 @@
 
     @media screen and(min-width:$tablet) {
         width: 336px;
-        margin-left: 32px;
     }
 
     @media screen and(min-width:$desktop) {
         width: 392px;
-        margin-left: 140px;
     }
 }
 
