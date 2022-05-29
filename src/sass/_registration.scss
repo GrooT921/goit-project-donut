@@ -3,12 +3,11 @@
 }
 
 .registration__container {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 32px 8px;
-  height: 466px;
+  min-height: 466px;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
     4px 4px 4px rgba(171, 129, 108, 0.15);
   border-radius: 150px 150px 0px 0px;
@@ -54,20 +53,40 @@
   row-gap: 20px;
 }
 
+.registration-form__item {
+  position: relative;
+}
 .registration-form__input {
   width: 100%;
   border: 0 transparent solid;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   border-bottom: 1px rgba(171, 129, 108, 1) solid;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::placeholder {
     color: rgba(171, 129, 108, 0.5);
   }
+
+  &:valid:not(:placeholder-shown) {
+    border-color: green;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: red;
+  }
+
+  &:invalid:not(:placeholder-shown) + .contact-form__error-message {
+    display: block;
+  }
+
+  &:focus {
+    outline: 1px rgba(53, 51, 51, 0.445) solid;
+  }
 }
 
-// .registration-button {
-//     margin-top: 32px;
-//     text-align: center;
-//     min-width: 145px;
-//     padding-top: 8px;
-//     padding-bottom: 8px;
-// }
+.blob-button--position {
+  padding-left: 47px;
+  padding-right: 47px;
+}
