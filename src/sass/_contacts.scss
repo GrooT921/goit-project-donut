@@ -81,10 +81,6 @@
     display: none;
 }
 
-$cyan: #ab816c;
-$dark: #FFFFFF;
-$borderW: 2px;
-
 // .main-button {
 //     margin-top: 32px;
 //     padding: 8px 57px;
@@ -94,3 +90,20 @@ $borderW: 2px;
 //         padding-right: 67px;
 //     }
 // }
+// trying to make a button animation bolow
+.blob-button__svg {
+    display: none;
+}
+
+.buttons {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.blob-button {
+    padding: 8px 57px;
+    @media screen and (min-width: 1280px) {
+        padding-left: 67px;
+        padding-right: 67px;
+    }
+}
