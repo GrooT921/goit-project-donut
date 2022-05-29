@@ -9,15 +9,15 @@
 .program__content {
 
   @media screen and(min-width:$tablet) {
+    
     flex-basis: 50%;
-    ;
   }
 }
 
 .program__features {
 
   @media screen and(min-width:$tablet) {
-    flex-basis: 45%;
+    width: 336px;
   }
 
   // width: 390px;
@@ -42,7 +42,7 @@
 
 .program__list {
   padding-top: 8px;
-  justify-content: space-around;
+  // justify-content: space-around;
 
 }
 
@@ -61,6 +61,10 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
+    @media screen and (min-width: $desktop) {
+        justify-content: space-between;
+      }
 
   // @media screen and(min-width:$tablet) {
   //   padding: 60px 0 50px 0;
