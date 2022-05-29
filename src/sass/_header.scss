@@ -1,0 +1,184 @@
+.header__container{
+    width: 320px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-image: url(../images/header/mobile/donuts-mobile.png);
+    background-repeat: no-repeat;
+
+    @media screen and (min-width:$tablet) and (max-width:$tablet-max) {
+        position: relative;
+        width: 769px;
+        height: auto;
+        padding-right: 32px;
+        padding-left: 32px;
+        background-image: url(../images/header/tablet/donuts-tablet.png);
+        background-repeat: no-repeat;
+        background-position: 289px 0px;
+    }
+    @media screen and (min-width:$desktop) {
+        position: relative;
+        width: 1280px;
+        height: auto;
+        background-image: url(../images/header/desktop/donuts-desktop.png);
+        background-repeat: no-repeat;
+        background-position: 600px 0px;
+    }
+}
+
+.main-nav {
+    @media screen and (max-width:$mobile-max) {
+        display: flex;
+        margin-bottom: 30px;
+        align-items: center;
+        }
+    @media screen and (min-width:$desktop) {
+        display: flex;
+        align-items: center;
+        }
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 8px;
+    @media screen and (min-width:$tablet) and (max-width:$tablet-max) {
+        display: block;
+        padding-top: 35px;
+        margin-bottom: 15px;
+        margin-left: 0px;
+    }
+    @media screen and (min-width:$desktop) {
+        display: block;
+        margin: 40px 162px 40px 19px;
+    }
+}
+.logo__icon {
+    @media screen and (min-width:$desktop) {
+            width: 160px;
+            height: 80px;
+        }
+}
+.site-nav {
+    @media screen and (max-width:$tablet-max) {
+            display: none;
+        }
+    @media screen and (min-width:$desktop) {
+             display: flex;
+}
+}
+.site-nav__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.site-nav__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.222;
+    text-decoration: none;
+   
+    color: $text-color;
+}
+.menu__button {
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    margin-left: -30px;
+    @media screen and (min-width: 769px) {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+    @media screen and (min-width:$desktop) {
+         display: none;
+}
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width:$tablet) {
+        align-items: flex-start;
+    }
+}
+.main-title {
+    margin-bottom: 8px;
+    font-family: 'Caveat Brush';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.266;
+    color: $text-color;
+    width: 224px;
+    height: 76px;
+    @media screen and (max-width:$mobile-max) {
+        text-align: center;
+    }
+    @media screen and (min-width:$desktop) {
+        width: 490px;
+        height: 130px;
+        margin-bottom: 16px;
+        font-size: 64px;
+        line-height: 1.016;
+    }
+}
+
+.title-info {
+    margin-bottom: 32px;
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.25;
+    color: $text-color;
+    @media screen and (min-width:$tablet) {
+            margin-bottom: 20px;
+        }
+    @media screen and (min-width:$desktop) {
+        margin-bottom: 32px;
+        font-size: 24px;
+        line-height: 1.208;
+        }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 145px;
+    height: 40px;
+    background:$button-bg-color;
+    border-radius: 25px;
+    border: 0px;
+
+    font-family: 'Caveat Brush';
+    font-size: 18px;
+    line-height: 1.277;
+    text-align: center;
+    color:$primary-body-color;
+    @media screen and (min-width:$tablet) {
+            margin-bottom: 20px;
+        }
+    @media screen and (min-width:$desktop) {
+        width: 158px;
+        height: 45px;
+        margin-bottom: 32px;
+
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon__item:not(:last-child) {
+    margin-right: 16px;
+}
