@@ -1,23 +1,17 @@
 <header class="page-header">
     <div class="header__container container">
-        <nav class="main-nav">
-            <a class="logo" href="./index.html">
-                <svg width="96px" height="45px" class="logo__icon">
-                    <use href="./images/sprite.svg#logo"></use>
-                </svg>
-            </a>
-            <ul class="site-nav">
-                <li class="site-nav__item"><a class="site-nav__link" href="#">About us</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="#">Program</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="#">Reviews</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="#">Contacts</a></li>
-            </ul>
-            <button type="button" class="menu__button">
-                <svg class="menu-icon" width="30px" height="16px" aria-label="Переключатель мобильного меню">
-                    <use class="icon__menu" href="./images/sprite.svg#"></use>
-                </svg>
-            </button>
-        </nav>
+        <picture class="header__picture--mobile">
+            <source srcset="./images/header/mobile/donuts-mobile.png 1x, ./images/header/mobile/donuts-mobile@2x.png 2x" type="image/png">
+            <img src="./images/header/mobile/donuts-mobile.png" alt="Donuts">
+        </picture>
+       <picture class="header__picture--tablet">
+            <source srcset="./images/header/tablet/donuts-tablet.png 1x, ./images/header/tablet/donuts-tablet@2x.png 2x" type="image/jpeg">
+            <img src="./images/header/tablet/donuts-tablet.png" alt="Donuts">
+        </picture>
+        <picture class="header__picture--desktop">
+            <source srcset="./images/header/desktop/donuts-desktop.png 1x, ./images/header/desktop/donuts-desktop@2x.png 2x" type="image/jpeg">
+            <img src="./images/header/desktop/donuts-desktop.png" alt="Donuts">
+        </picture>
         <div class="info">
             <h1 class="main-title">Donut Masterclass with the Donut King</h1>
             <h2 class="title-info">Hosted by Eva Green</h2>
