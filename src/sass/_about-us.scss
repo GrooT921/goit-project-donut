@@ -13,7 +13,7 @@
         margin-right: auto;
     }
 
-    @media screen and (min-width:$tablet) {
+    @media screen and (max-width:$tablet-max) {
         width: 336px;
     }
 
@@ -31,7 +31,7 @@
         margin-left: 32px;
     }
 
-    @media screen and(min-width:$tablet-max) {
+    @media screen and(min-width:$desktop) {
         width: 392px;
         margin-left: 140px;
     }
