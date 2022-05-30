@@ -1,12 +1,15 @@
 .program {
   margin-top: 16px;
+  padding-bottom: 50px;
 
   @media screen and(min-width:$tablet) {
-    margin-top: 88px;
+    margin-top: 78px;
+    padding-bottom: 44px;
   }
 
   @media screen and(min-width:$desktop) {
-    margin-top: 66px;
+    margin-top: 14px;
+    padding-bottom: 92px;
   }
 }
 
