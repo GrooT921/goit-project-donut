@@ -22,7 +22,7 @@
       url('/src/images/background/tablet/bg-header-tablet.png');
     background-size: auto, 100%;
     background-repeat: no-repeat;
-    background-position: 289px 0, top;
+    background-position: top left 85%, top;
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -58,7 +58,7 @@
   @media screen and (max-width: $mobile-max) {
     z-index: 1000;
     background-image: url('/src/images/background/mobile/background-mobile.png');
-    background-size: 100%;
+    background-size: 100% 1338px;
     background-repeat: no-repeat;
     background-position: top;
 
@@ -72,7 +72,7 @@
 
   @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
     background-image: url('/src/images/background/tablet/background-tablet.png');
-    background-size: 100%;
+    background-size: 100% 1520px;
     background-repeat: no-repeat;
     background-position: top;
 
@@ -85,8 +85,9 @@
   }
 
   @media screen and (min-width: $desktop) {
+    max-width: 100%;
     background-image: url('/src/images/background/desktop/background-desktop.png');
-    background-size: 100%;
+    background-size: 100% 1860px;
     background-repeat: no-repeat;
     background-position: top;
 
