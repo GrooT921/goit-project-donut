@@ -1,43 +1,94 @@
 <section class="registration">
   <div class="container">
+    <h2 class="title registration__title">Registration</h2>
     <div class="registration__container">
-      <h2 class="title registration__title">Registration</h2>
-        <ul class="registration__time registration__details">
-          <li>May 23, 11:00</li>
-          <li>New York</li>
-        </ul>
-      <span class="registration__details">$ 699</span>
-      <p class="registration__text">
-        Apply your personal info for registration
+      <p class="registration__time registration__details">
+        <time>May 23, 11:00</time>New York
+        <span class="registration__details">$ 699</span>
       </p>
       <form autocomplete="off" class="registration-form">
-        <ul class="registration-form__list">
-          <li class="registration-form__item">
-            <input
-              class="registration-form__input"
-              type="text"
-              name="name"
-              placeholder="Your name"
-            />
-          </li>
-          <li class="registration-form__item">
-            <input
-              class="registration-form__input"
-              type="number"
-              name="phone"
-              placeholder="Phone number"
-            />
-          </li>
-          <li class="registration-form__item">
-            <input
-              class="registration-form__input"
-              type="email"
-              name="email"
-              placeholder="Email"
-            />
-          </li>
-        </ul>
-        <button type="submit" class="registration-button">Register</button>
+        <div>
+          <p class="registration__text">
+            Apply your personal info for registration
+          </p>
+          <ul class="registration-form__list">
+            <li class="registration-form__item">
+              <input
+                class="registration-form__input"
+                type="text"
+                name="name"
+                pattern="^[A-Z][a-zA-z-]{2,}$"
+                placeholder="Your name"
+                required
+              />
+              <span class="contact-form__error-message"
+                >This field must contain only letters with capital first</span
+              >
+            </li>
+            <li class="registration-form__item">
+              <input
+                class="registration-form__input"
+                type="tel"
+                name="phone"
+                pattern="^\+?\d{4}-\d{3}-\d{4}$"
+                placeholder="Phone number"
+                required
+              />
+              <span class="contact-form__error-message"
+                >Please enter phone number in correct format 1234-567-8912</span
+              >
+            </li>
+            <li class="registration-form__item">
+              <input
+                class="registration-form__input"
+                type="email"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                placeholder="Email"
+                required
+              />
+              <span class="contact-form__error-message"
+                >This field must contain E-Mail in the format
+                example@site.com</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="buttons registration-button">
+          <button type="submit" class="blob-button blob-button--position">
+            Register
+            <span class="blob-button__inner">
+              <span class="blob-button__blobs">
+                <span class="blob-button__blob"></span>
+                <span class="blob-button__blob"></span>
+                <span class="blob-button__blob"></span>
+                <span class="blob-button__blob"></span>
+              </span>
+            </span>
+          </button>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          class="blob-button__svg"
+        >
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                result="blur"
+                stdDeviation="10"
+              ></feGaussianBlur>
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                result="goo"
+              ></feColorMatrix>
+              <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+            </filter>
+          </defs>
+        </svg>
       </form>
     </div>
   </div>
