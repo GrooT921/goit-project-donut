@@ -13,14 +13,20 @@
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    
-    <include src="./partials/header.html" /></include>
-    <include src="./partials/menu.html" /></include>
-    <include src="./partials/about-us.html" /></include>
+
+    <div class="primery-background">
+      <include src="./partials/menu.html" /></include>
+      <include src="./partials/header.html" /></include>
+      <include src="./partials/about-us.html" /></include>
+    </div>
     <include src="./partials/program.html" /></include>
-    <include src="./partials/reviews.html" /></include>
-    <include src="./partials/registration.html" /></include>
-    <include src="./partials/contacts.html" /></include>
-    <include src="./partials/footer.html" /></include>
+    <div class="secondary-background">
+      <include src="./partials/reviews.html" /></include>
+      <include src="./partials/registration.html" /></include>
+      <include src="./partials/contacts.html" /></include>
+      <include src="./partials/footer.html" /></include>
+    </div>
+    <script type="module" src="./js/about-btn.js"></script>
+    <script type="module" src="./js/btn.js"></script>
   </body>
 </html>

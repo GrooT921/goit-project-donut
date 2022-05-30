@@ -31,9 +31,8 @@ address {
 
 ul {
     list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -43,6 +42,8 @@ a {
 
 body {
     // background-color: var(--body-color);
+    padding: 0;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;

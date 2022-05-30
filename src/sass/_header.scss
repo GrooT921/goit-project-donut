@@ -1,11 +1,15 @@
 .header__container{
+    position: relative;
     width: 320px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    
 
-    background-image: url(../images/header/mobile/donuts-mobile.png);
-    background-repeat: no-repeat;
+    /*background-image: url(../images/header/mobile/donuts-mobile.png);
+    background-repeat: no-repeat;*/
 
     @media screen and (min-width:$tablet) and (max-width:$tablet-max) {
         position: relative;
@@ -13,20 +17,56 @@
         height: auto;
         padding-right: 32px;
         padding-left: 32px;
-        background-image: url(../images/header/tablet/donuts-tablet.png);
+        padding-top: 15px;
+        padding-bottom: 69px;
+        /*background-image: url(../images/header/tablet/donuts-tablet.png);
         background-repeat: no-repeat;
-        background-position: 289px 0px;
+        background-position: 289px 0px;*/
     }
     @media screen and (min-width:$desktop) {
         position: relative;
         width: 1280px;
         height: auto;
-        background-image: url(../images/header/desktop/donuts-desktop.png);
+        padding-top: 40px;
+        padding-bottom: 111px;
+        /*background-image: url(../images/header/desktop/donuts-desktop.png);
         background-repeat: no-repeat;
-        background-position: 600px 0px;
+        background-position: 600px 0px;*/
     }
 }
-
+.header__picture--mobile {
+    @media screen and (max-width:$mobile-max){
+        position: absolute;
+        top: -55px;
+        left: 0px;
+    }
+    @media screen and (min-width:$tablet) {
+        display: none;
+    }
+}
+.header__picture--tablet {
+    @media screen and (max-width:$mobile-max){
+        display: none;
+    }
+    @media screen and (max-width:$tablet-max) {
+        position: absolute;
+        top: -85px;
+        right: 70px;
+    }
+    @media screen and (min-width:$desktop) {
+        display: none;
+        }
+}
+.header__picture--desktop {
+    @media screen and (max-width:$tablet-max) {
+        display: none; 
+    }
+    @media screen and (min-width:$desktop) {
+        position: absolute;
+        right: -125px;
+        top: -120px;
+        }
+}
 .main-nav {
     @media screen and (max-width:$mobile-max) {
         display: flex;
@@ -116,6 +156,7 @@
     height: 76px;
     @media screen and (max-width:$mobile-max) {
         text-align: center;
+        z-index: 10;
     }
     @media screen and (min-width:$desktop) {
         width: 490px;
@@ -128,11 +169,7 @@
 
 .title-info {
     margin-bottom: 32px;
-    // font-family: 'Montserrat';
-    // font-style: normal;
     font-weight: 500;
-    // font-size: 16px;
-    // line-height: 1.25;
     color: $text-color;
     @media screen and (min-width:$tablet) {
             margin-bottom: 20px;
