@@ -1,84 +1,54 @@
-<section class="reviews">
+<section class="reviews__section">
     <div class="reviews__container container">
         <h2 class="reviews__title title">Reviews</h2>
-        <article>
-            <picture class="reviews__photo john">
-                <source srcset="
-                            ./images/reviews/mobile/john-reviews-mobile.jpg 1x,
-                            ./images/reviews/mobile/john-reviews-mobile@2x.jpg 2x" media="(min-width: 320px)"/>
-                <source srcset="
-                            ./images/reviews/tablet/john-reviews-tablet.jpg 1x,
-                            ./images/reviews/tablet/john-reviews-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
-
-                <source srcset="
-                            ./images/reviews/desktop/john-reviews-desktop.jpg 1x,
-                            ./images/reviews/desktop/john-reviews-desktop@2x.jpg 2x" media="(min-width: 1280x)"/>
-                <img src="./images/reviews/desktop/john-reviews-desktop.jpg" alt="John review">
-            </picture>
-            <h3 class="slider__title title">John</h3>
-            <svg>
-                <use href="./images/sprite.svg#icon-four-star"></use>
-            </svg>
-        </article>
-        <article>
-            <picture class="reviews__photo will">
-                <source srcset="
-                ./images/reviews/mobile/will-reviews-mobile.jpg 1x,
-                ./images/reviews/mobile/will-reviews-mobile@2x.jpg 2x
-                "media="(min-width: 320px)"/>
-
-                <source srcset="
-                ./images/reviews/tablet/will-reviews-tablet.jpg 1x,
-                ./images/reviews/tablet/will-reviews-tablet@2x.jpg 2x
-                "media="(min-width: 768px)"/>
-
-                <source srcset="
-                ./images/reviews/desktop/will-reviews-desktop.jpg 1x,
-                ./images/reviews/desktop/will-reviews-desktop@2x.jpg 2x
-                "media="(min-width: 1280x)"/>
-
-                <img src="./images/reviews/desktop/will-reviews-desktop.jpg" alt="Will review">
-            </picture>
-            <h3 class="slider__title title">Will</h3>
-            <svg>
-                <use href="./images/sprite.svg#icon-five-star"></use>
-            </svg>
-            <p>Last time I have visited a cooking course by Eva
-                I was impressed with the way she explained everything
-                to people. You can be sure you will manage to cook a delicious dish even if it is your first time in the
-                kitchen!
-                Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to
-                everyone!</p>
-        </article>
-        <article>
-            <svg>
-                <defs>
-                    <clipPath id="mask">
-                        <circle r="140" />
-                    </clipPath>
-                </defs>
-            </svg>
-            <picture class="reviews__photo elizabeth">
-                <source srcset="
-                            ./images/reviews/mobile/elizabeth-reviews-mobile.jpg 1x,
-                            ./images/reviews/mobile/elizabeth-reviews-mobile@2x.jpg 2x
-                            " media="(min-width: 320px)"/>
-                <source srcset="
-                            ./images/reviews/tablet/elizabeth-reviews-tablet.jpg 1x,
-                            ./images/reviews/tablet/elizabeth-reviews-tablet@2x.jpg 2x
-                            " media="(min-width: 768px)"/>
-
-                <source srcset="
-                            ./images/reviews/desktop/elizabeth-reviews-desktop.jpg 1x,
-                            ./images/reviews/desktop/elizabeth-reviews-desktop@2x.jpg 2x,
-                            " media="(min-width: 1280x)"/>
-
-                <img src="./images/reviews/desktop/elizabeth-reviews-desktop.jpg" alt="Elizabeth review">
-            </picture>
-            <h3 class="slider__title title">Elizabeth</h3>
-            <svg>
-                <use href="./images/sprite.svg#icon-five-star"></use>
-            </svg>
-        </article>
+        <div class="review-articles">
+            <article class="review-article">
+                <div class="review__mask john"></div>
+                <svg class="slider__stars">
+                    <use href="/sass/images/sprite.svg#icon-five-star"></use>
+                </svg>
+                <h3 class="slider__title title">John</h3>
+                <p class="slider__description john">
+                    Last time I have visited a cooking course by Eva<br>I was impressed with the way she explained
+                    everything<br>to people. You can be sure you will manage to cook a delicious dish even if it is your
+                    first
+                    time in the kitchen!
+                    Thank you so much for the masterclass! Looking forward to the next one and highly
+                    recommend it to everyone!</p>
+            </article>
+            <article class="review-article">
+                <div class="review__mask will"></div>
+                <svg class="slider__stars">
+                    <use href="/sass/images/sprite.svg#icon-five-star"></use>
+                </svg>
+                <h3 class="slider__title title">Will</h3>
+                <p class="slider__description will">
+                    Last time I have visited a cooking course by Eva<br>I was impressed with the way she explained
+                    everything<br>to people. You can be sure you will manage to cook a delicious dish even if it is your
+                    first
+                    time in the kitchen!
+                    Thank you so much for the masterclass! Looking forward to the next one and highly
+                    recommend it to everyone!</p>
+            </article>
+            <article class="review-article">
+                <div class="review__mask elizabeth"></div>
+                <svg class="slider__stars">
+                    <use href="/sass/images/sprite.svg#icon-five-star"></use>
+                </svg>
+                <h3 class="slider__title title">Elizabeth</h3>
+                <p class="slider__description elizabeth">
+                    Last time I have visited a cooking course by Eva<br>I was impressed with the way she explained
+                    everything<br>to people. You can be sure you will manage to cook a delicious dish even if it is your
+                    first
+                    time in the kitchen!
+                    Thank you so much for the masterclass! Looking forward to the next one and highly
+                    recommend it to everyone!</p>
+            </article>
+        </div>
+        <div class="review-pagination">
+            <div class="pagination-line"></div>
+            <p class="pagination-number">2/15</p>
+            <div class="pagination-line"></div>
+        </div>
     </div>
 </section>
