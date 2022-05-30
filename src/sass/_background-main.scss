@@ -1,0 +1,100 @@
+.primary-background {
+  width: 100%;
+
+  @media screen and (max-width: $mobile-max) {
+    background-image: url('/src/images/header/mobile/donuts-mobile.png'),
+      url('/src/images/background/mobile/bg-header-mobile.png');
+    background-size: auto, 100%;
+    background-repeat: no-repeat;
+    background-position: top left, top;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('/src/images/header/mobile/donuts-mobile@2x.png'),
+        url('/src/images/background/mobile/bg-header-mobile@2x.png');
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
+    background-image: url('/src/images/header/tablet/donuts-tablet.png'),
+      url('/src/images/background/tablet/bg-header-tablet.png');
+    background-size: auto, 100%;
+    background-repeat: no-repeat;
+    background-position: 289px 0, top;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('/src/images/header/tablet/donuts-tablet@2x.png'),
+        url('/src/images/background/tablet/bg-header-tablet@2x.png');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url('/src/images/header/desktop/spoon-desktop.png'),
+      url('/src/images/header/desktop/donuts-desktop.png'),
+      url('/src/images/background/desktop/bg-header-desktop.png');
+    background-size: auto, auto, 100%;
+    background-repeat: no-repeat;
+    background-position: 0 501px, top right, top;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('/src/images/header/desktop/spoon-desktop@2x.png'),
+        url('/src/images/header/desktop/spoon-desktop@2x.png'),
+        url('/src/images/background/desktop/bg-header-desktop@2x.png');
+    }
+  }
+}
+
+.secondary-background {
+  width: 100%;
+
+  @media screen and (max-width: $mobile-max) {
+    z-index: 1000;
+    background-image: url('/src/images/background/mobile/background-mobile.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('/src/images/background/mobile/background-mobile@2x.png');
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
+    background-image: url('/src/images/background/tablet/background-tablet.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('/src/images/background/tablet/background-tablet@x2.png');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url('/src/images/background/desktop/background-desktop.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('/src/images/background/desktop/background-desktop@2x.png');
+    }
+  }
+}
