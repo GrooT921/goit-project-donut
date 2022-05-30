@@ -34,7 +34,7 @@
         background-position: 600px 0px;*/
     }
 }
-.header__picture--mobile {
+/*.header__picture--mobile {
     @media screen and (max-width:$mobile-max){
         position: absolute;
         top: -55px;
@@ -66,76 +66,8 @@
         right: -125px;
         top: -120px;
         }
-}
-.main-nav {
-    @media screen and (max-width:$mobile-max) {
-        display: flex;
-        margin-bottom: 30px;
-        align-items: center;
-        }
-    @media screen and (min-width:$desktop) {
-        display: flex;
-        align-items: center;
-        }
-}
+}*/
 
-.logo {
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 8px;
-    @media screen and (min-width:$tablet) and (max-width:$tablet-max) {
-        display: block;
-        padding-top: 35px;
-        margin-bottom: 15px;
-        margin-left: 0px;
-    }
-    @media screen and (min-width:$desktop) {
-        display: block;
-        margin: 40px 162px 40px 19px;
-    }
-}
-.logo__icon {
-    @media screen and (min-width:$desktop) {
-            width: 160px;
-            height: 80px;
-        }
-}
-.site-nav {
-    @media screen and (max-width:$tablet-max) {
-            display: none;
-        }
-    @media screen and (min-width:$desktop) {
-             display: flex;
-}
-}
-.site-nav__item:not(:last-child) {
-    margin-right: 20px;
-}
-
-.site-nav__link {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.222;
-    text-decoration: none;
-   
-    color: $text-color;
-}
-.menu__button {
-    background-color: transparent;
-    border: 0px;
-    padding: 0px;
-    margin-left: -30px;
-    @media screen and (min-width: 769px) {
-        position: absolute;
-        top: 32px;
-        right: 32px;
-    }
-    @media screen and (min-width:$desktop) {
-         display: none;
-}
-}
 .info {
     display: flex;
     flex-direction: column;
@@ -168,20 +100,20 @@
 }
 
 .title-info {
-    margin-bottom: 32px;
+    /*margin-bottom: 32px;*/
     font-weight: 500;
     color: $text-color;
-    @media screen and (min-width:$tablet) {
+    /*@media screen and (min-width:$tablet) {
             margin-bottom: 20px;
-        }
+        }*/
     @media screen and (min-width:$desktop) {
-        margin-bottom: 32px;
+        /*margin-bottom: 32px;*/
         font-size: 24px;
         line-height: 1.208;
         }
 }
 
-.button {
+/*.button__header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,14 +140,15 @@
         font-size: 24px;
         line-height: 30px;
     }
-}
+}*/
 
-.social-icon {
+.social-list {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 32px;
 }
 
-.social-icon__item:not(:last-child) {
+.social-list__item:not(:last-child) {
     margin-right: 16px;
 }
