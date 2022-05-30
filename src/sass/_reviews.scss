@@ -1,23 +1,259 @@
+.reviews__section {
+  padding: 10px 0 16px 0;
+  background-color: $primary-body-color;
+  @media screen and (min-width: $tablet) {
+    padding: 25px 0 20px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 38.5px 0 30px;
+  }
+}
+
+.reviews__container {
+  position: relative;
+}
+
 .reviews__title {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.25;
-    text-align: center;
-    margin-bottom: 20px;
-    color: $title-color;
-    font-family: 'Caveat Brush';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 20px;
+  color: $title-color;
+  font-family: 'Caveat Brush', sans-serif;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    margin-bottom: 178px;
+  }
 }
 
 .slider__title {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.21;
-    text-align: center;
-    color: $title-color;
-    font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: $title-color;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 8px;
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
 }
 
-.reviews__photo{
-    width: 280px;
+.slider__description {
+  width: 280px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $text-color;
+  @media screen and (min-width: $tablet) {
+    width: 1248px;
+    white-space: pre-line;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    width: 1070px;
+    white-space: normal;
+  }
+  &.john {
+    display: none;
+  }
+
+  &.will {
+    display: block;
+  }
+  &.elizabeth {
+    display: none;
+  }
+}
+
+.review-articles {
+  margin-bottom: 32px;
+}
+
+.review-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:nth-of-type(1) {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      top: 15px;
+      left: 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      top: 90px;
+    }
+  }
+
+  &:nth-of-type(3) {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      top: 15px;
+      left: 582px;
+    }
+    @media screen and (min-width: $desktop) {
+      left: 773px;
+      top: 90px;
+    }
+  }
+}
+
+.review__mask.john {
+  background-color: $button-bg-color;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-image: url(/sass/images/reviews/desktop/john-reviews-decktop.jpg);
+  background-size: contain;
+  margin-bottom: 8px;
+  @media screen and (min-width: $tablet) {
+    width: 151px;
+    height: 151px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .review__mask.john {
+    background-image: url(/sass/images/reviews/mobile/john-reviews-mobile@2x.jpg);
+
+    @media screen and (min-width: $tablet) {
+      background-image: url(/sass/images/reviews/tablet/john-reviews-tablet@2x.jpg);
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-image: url(/sass/images/reviews/desktop/john-reviews-decktop@2x.jpg);
+    }
+  }
+}
+
+.review__mask.will {
+  background-color: $button-bg-color;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-image: url(/sass/images/reviews/mobile/will-reviews-mobile.jpg);
+  background-size: contain;
+  margin-bottom: 8px;
+  @media screen and (min-width: $tablet) {
+    width: 336px;
+    height: 336px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 394px;
+    height: 394px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .review__mask.will {
+    background-image: url(/sass/images/reviews/mobile/will-reviews-mobile@2x.jpg);
+    @media screen and (min-width: $tablet) {
+      background-image: url(/sass/images/reviews/tablet/will-reviews-tablet@2x.jpg);
+    }
+    @media screen and (min-width: $desktop) {
+      background-image: url(/sass/images/reviews/desktop/will-reviews-decktop@2x.jpg);
+    }
+  }
+}
+
+.review__mask.elizabeth {
+  background-color: $button-bg-color;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-image: url(/sass/images/reviews/desktop/elizabeth-reviews-desktop@2x.jpg);
+  background-size: contain;
+  margin-bottom: 8px;
+  @media screen and (min-width: $tablet) {
+    width: 151px;
+    height: 151px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .review__mask.elizabeth {
+    background-image: url(/sass/images/reviews/mobile/elizabeth-reviews-mobile@2x.jpg);
+
+    @media screen and (min-width: $tablet) {
+      background-image: url(/sass/images/reviews/tablet/elizabeth-reviews-tablet@2x.jpg);
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-image: url(/sass/images/reviews/desktop/elizabeth-reviews-desktop@2x.jpg);
+    }
+  }
+}
+
+.slider__stars {
+  width: 133.34px;
+  height: 24px;
+  margin-bottom: 8px;
+  @media screen and (min-width: $tablet) {
+    width: 136px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 134.58px;
+  }
+}
+
+.review-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-line {
+  width: 35px;
+  height: 1px;
+  background-color: $button-bg-color;
+  &:nth-of-type(1) {
+    margin-right: 12px;
+    @media screen and (min-width: $desktop) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.pagination-number {
+  margin-right: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: $button-bg-color;
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    margin-right: 10px;
+  }
 }
