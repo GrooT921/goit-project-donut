@@ -117,7 +117,7 @@
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background-image: url(/sass/images/reviews/desktop/john-reviews-decktop.jpg);
+  background-image: url(../images/reviews/mobile/john-reviews-mobile.jpg);
   background-size: contain;
   margin-bottom: 8px;
   @media screen and (min-width: $tablet) {
@@ -135,14 +135,14 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .review__mask.john {
-    background-image: url(/sass/images/reviews/mobile/john-reviews-mobile@2x.jpg);
+    background-image: url(../images/reviews/mobile/john-reviews-mobile@2x.jpg);
 
     @media screen and (min-width: $tablet) {
-      background-image: url(/sass/images/reviews/tablet/john-reviews-tablet@2x.jpg);
+      background-image: url(../images/reviews/tablet/john-reviews-tablet@2x.jpg);
     }
 
     @media screen and (min-width: $desktop) {
-      background-image: url(/sass/images/reviews/desktop/john-reviews-decktop@2x.jpg);
+      background-image: url(../images/reviews/desktop/john-reviews-decktop@2x.jpg);
     }
   }
 }
@@ -152,7 +152,7 @@
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background-image: url(/sass/images/reviews/mobile/will-reviews-mobile.jpg);
+  background-image: url(../images/reviews/mobile/will-reviews-mobile.jpg);
   background-size: contain;
   margin-bottom: 8px;
   @media screen and (min-width: $tablet) {
@@ -170,12 +170,12 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .review__mask.will {
-    background-image: url(/sass/images/reviews/mobile/will-reviews-mobile@2x.jpg);
+    background-image: url(../images/reviews/mobile/will-reviews-mobile@2x.jpg);
     @media screen and (min-width: $tablet) {
-      background-image: url(/sass/images/reviews/tablet/will-reviews-tablet@2x.jpg);
+      background-image: url(../images/reviews/tablet/will-reviews-tablet@2x.jpg);
     }
     @media screen and (min-width: $desktop) {
-      background-image: url(/sass/images/reviews/desktop/will-reviews-decktop@2x.jpg);
+      background-image: url(../images/reviews/desktop/will-reviews-decktop@2x.jpg);
     }
   }
 }
@@ -185,7 +185,7 @@
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background-image: url(/sass/images/reviews/desktop/elizabeth-reviews-desktop@2x.jpg);
+  background-image: url(../images/reviews/desktop/elizabeth-reviews-desktop@2x.jpg);
   background-size: contain;
   margin-bottom: 8px;
   @media screen and (min-width: $tablet) {
@@ -203,14 +203,14 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .review__mask.elizabeth {
-    background-image: url(/sass/images/reviews/mobile/elizabeth-reviews-mobile@2x.jpg);
+    background-image: url(../images/reviews/mobile/elizabeth-reviews-mobile@2x.jpg);
 
     @media screen and (min-width: $tablet) {
-      background-image: url(/sass/images/reviews/tablet/elizabeth-reviews-tablet@2x.jpg);
+      background-image: url(../images/reviews/tablet/elizabeth-reviews-tablet@2x.jpg);
     }
 
     @media screen and (min-width: $desktop) {
-      background-image: url(/sass/images/reviews/desktop/elizabeth-reviews-desktop@2x.jpg);
+      background-image: url(../images/reviews/desktop/elizabeth-reviews-desktop@2x.jpg);
     }
   }
 }
