@@ -1,6 +1,7 @@
 .registration {
   position: relative;
   margin-top: 32px;
+  // border: 1px solid red;
 }
 
 .registration__container {
@@ -12,7 +13,7 @@
   background-color: $secondary-body-color;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
     4px 4px 4px rgba(171, 129, 108, 0.15);
-  border-radius: 150px 150px 0px 0px;
+  border-radius: 175px 175px 0px 0px/150px 150px 0px 0px;
 }
 
 .registration__title {
@@ -109,6 +110,22 @@
   .registration {
     margin-top: 20px;
     padding-top: 93px;
+    padding-bottom: 90px;
+
+    background-image: url(./../images/registration/tablet/registration-donut-tablet.png),
+      url(./../images/registration/tablet/registration-confetti-tablet.png);
+    background-position: top 0 left 0, bottom -60px right 5px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .registration {
+      background-image: url(./../images/registration/tablet/registration-donut-tablet@2x.png),
+        url(./../images/registration/tablet/registration-confetti-tablet@2x.png);
+    }
   }
 
   .registration__container {
@@ -165,6 +182,22 @@
   .registration {
     margin-top: 60px;
     padding-top: 81px;
+    padding-bottom: 190px;
+
+    background-image: url(./../images/registration/desktop/registration-donut-desktop.png),
+      url(./../images/registration/desktop/registration-confetti-desktop.png);
+    background-position: top 15px left 70px, bottom -100px right 5px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .registration {
+      background-image: url(./../images/registration/desktop/registration-donut-desktop@2x.png),
+        url(./../images/registration/desktop/registration-confetti-desktop@2x.png);
+    }
   }
 
   .registration__container {
