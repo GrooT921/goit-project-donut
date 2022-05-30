@@ -75,15 +75,19 @@
     color: $button-bg-color;
     background-color: transparent;
     cursor: pointer;
+    transition: transform 250ms $timing-function;
 
     @media screen and(min-width:$desktop) {
-            display: none;
-        }
+        display: none;
+    }
 
-    // &:hover,
-    // &:focus {
-    //   background-color: transparent;
-    //   transform: scale(1.2);
-    //   transform: translate (10px, 20px);
-    // }
+    &.is-hidden {
+        display: none;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        transform: scale(1.2);
+    }
 }
