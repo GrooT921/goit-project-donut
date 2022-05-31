@@ -57,12 +57,10 @@
     }
   }
   @media screen and (min-width: $tablet) {
-    width: 1248px;
     white-space: pre-line;
   }
   @media screen and (min-width: $desktop) {
     font-size: 18px;
-    width: 1070px;
     white-space: normal;
   }
   &.john {
