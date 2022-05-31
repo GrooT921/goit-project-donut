@@ -1,25 +1,3 @@
-// .container {
-//   padding-right: 20px;
-//   padding-left: 20px;
-//   margin-right: auto;
-//   margin-left: auto;
-
-
-//   @media screen and (max-width: $mobile) {
-//     max-width: 320px;
-//   }
-
-//   @media screen and (max-width: $tablet) {
-//     max-width: 744px;
-//   }
-
-//   @media screen and (max-width: $desktop) {
-//     max-width: 1074px;
-//   }
-// }
-
-
-// більш адаптивний контейнер
 .container {
   max-width: $mobile;
   padding-right: 15px;
