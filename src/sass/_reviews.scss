@@ -183,10 +183,12 @@ screen and (min-resolution: 2dppx) {
   @media screen and (min-width: $tablet) {
     width: 336px;
     height: 336px;
+    background-image: url(../images/reviews/tablet/will-reviews-tablet.jpg);
   }
   @media screen and (min-width: $desktop) {
     width: 394px;
     height: 394px;
+    background-image: url(../images/reviews/desktop/will-reviews-decktop.jpg);
   }
 }
 
