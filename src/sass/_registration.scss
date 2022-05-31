@@ -1,7 +1,8 @@
 .registration {
   position: relative;
-  margin-top: 32px;
-  // border: 1px solid red;
+  @media screen and (max-width: $mobile-max){
+    margin: 32px 0 32px;
+  }
 }
 
 .registration__container {
