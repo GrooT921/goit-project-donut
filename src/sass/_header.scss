@@ -6,10 +6,6 @@
     padding-right: 15px;
     padding-top: 30px;
     padding-bottom: 0px;
-    
-
-    /*background-image: url(../images/header/mobile/donuts-mobile.png);
-    background-repeat: no-repeat;*/
 
     @media screen and (min-width:$tablet) and (max-width:$tablet-max) {
         position: relative;
@@ -19,9 +15,6 @@
         padding-left: 32px;
         padding-top: 15px;
         padding-bottom: 69px;
-        /*background-image: url(../images/header/tablet/donuts-tablet.png);
-        background-repeat: no-repeat;
-        background-position: 289px 0px;*/
     }
     @media screen and (min-width:$desktop) {
         position: relative;
@@ -29,44 +22,8 @@
         height: auto;
         padding-top: 40px;
         padding-bottom: 111px;
-        /*background-image: url(../images/header/desktop/donuts-desktop.png);
-        background-repeat: no-repeat;
-        background-position: 600px 0px;*/
     }
 }
-/*.header__picture--mobile {
-    @media screen and (max-width:$mobile-max){
-        position: absolute;
-        top: -55px;
-        left: 0px;
-    }
-    @media screen and (min-width:$tablet) {
-        display: none;
-    }
-}
-.header__picture--tablet {
-    @media screen and (max-width:$mobile-max){
-        display: none;
-    }
-    @media screen and (max-width:$tablet-max) {
-        position: absolute;
-        top: -85px;
-        right: 70px;
-    }
-    @media screen and (min-width:$desktop) {
-        display: none;
-        }
-}
-.header__picture--desktop {
-    @media screen and (max-width:$tablet-max) {
-        display: none; 
-    }
-    @media screen and (min-width:$desktop) {
-        position: absolute;
-        right: -125px;
-        top: -120px;
-        }
-}*/
 
 .info {
     display: flex;
@@ -112,35 +69,6 @@
         line-height: 1.208;
         }
 }
-
-/*.button__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    width: 145px;
-    height: 40px;
-    background:$button-bg-color;
-    border-radius: 25px;
-    border: 0px;
-
-    font-family: 'Caveat Brush';
-    font-size: 18px;
-    line-height: 1.277;
-    text-align: center;
-    color:$primary-body-color;
-    @media screen and (min-width:$tablet) {
-            margin-bottom: 20px;
-        }
-    @media screen and (min-width:$desktop) {
-        width: 158px;
-        height: 45px;
-        margin-bottom: 32px;
-
-        font-size: 24px;
-        line-height: 30px;
-    }
-}*/
 
 .social-list {
     display: flex;
