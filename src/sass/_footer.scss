@@ -67,16 +67,46 @@ screen and (min-resolution: 2dppx) {
     border-radius: 50%;
     color: $text-color;
 
-    transition-property: background-color, color;
-    transition-duration: 250ms;
+    transition-property: transform, background-color, color;
+    transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
+        transform: scale(1.4);
         background-color: $button-bg-color;
         color: $button-text-color;
+        box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.35);
+    }
+
+    &:active {
+        transform: translate(1px, 1px);
+        box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
     }
 }
+
+// .footer__icon {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0px;
+//     padding: 0px;
+//     width: 30px;
+//     height: 30px;
+//     border: none;
+//     border-radius: 50%;
+//     color: $text-color;
+
+//     transition-property: background-color, color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//         background-color: $button-bg-color;
+//         color: $button-text-color;
+//     }
+// }
 
 .social-icon, 
 .button-icon {
