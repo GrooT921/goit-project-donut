@@ -44,14 +44,18 @@
   }
 }
 
-.slider__description {
-  width: 280px;
+.slider__description {  
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: $text-color;
+  @media screen and (max-width: $mobile-max){
+    br{
+      display: none;
+    }
+  }
   @media screen and (min-width: $tablet) {
     width: 1248px;
     white-space: pre-line;
@@ -70,6 +74,16 @@
   }
   &.elizabeth {
     display: none;
+  }
+}
+
+.mobile-br{
+  display: block;
+  @media screen and (min-width: $tablet){
+    display: none;
+  }
+  @media screen and (min-width: $desktop){
+    display: block;
   }
 }
 
@@ -117,25 +131,34 @@
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background-image: url(../images/reviews/mobile/john-reviews-mobile.jpg);
+  
   background-size: contain;
   margin-bottom: 8px;
+
+  @media screen and (max-width: $mobile-max){
+    background-image: url(../images/reviews/mobile/john-reviews-mobile.jpg);
+  }
+
   @media screen and (min-width: $tablet) {
+    background-image: url(../images/reviews/tablet/john-reviews-tablet.jpg);
     width: 151px;
     height: 151px;
   }
   @media screen and (min-width: $desktop) {
+    background-image: url(../images/reviews/desktop/john-reviews-decktop.jpg);
     width: 285px;
     height: 285px;
   }
+
 }
 
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratino: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
   .review__mask.john {
-    background-image: url(../images/reviews/mobile/john-reviews-mobile@2x.jpg);
+    @media screen and (max-width: $mobile-max){
+      background-image: url(../images/reviews/mobile/john-reviews-mobile@2x.jpg);
+    }    
 
     @media screen and (min-width: $tablet) {
       background-image: url(../images/reviews/tablet/john-reviews-tablet@2x.jpg);
@@ -151,10 +174,12 @@
   background-color: $button-bg-color;
   width: 280px;
   height: 280px;
-  border-radius: 50%;
-  background-image: url(../images/reviews/mobile/will-reviews-mobile.jpg);
+  border-radius: 50%;  
   background-size: contain;
   margin-bottom: 8px;
+  @media screen and (max-width: $mobile-max){
+    background-image: url(../images/reviews/mobile/will-reviews-mobile.jpg);
+  }
   @media screen and (min-width: $tablet) {
     width: 336px;
     height: 336px;
@@ -165,12 +190,13 @@
   }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratino: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
   .review__mask.will {
-    background-image: url(../images/reviews/mobile/will-reviews-mobile@2x.jpg);
+    @media screen and (max-width: $mobile-max){
+      background-image: url(../images/reviews/mobile/will-reviews-mobile@2x.jpg);
+    }    
     @media screen and (min-width: $tablet) {
       background-image: url(../images/reviews/tablet/will-reviews-tablet@2x.jpg);
     }
@@ -185,25 +211,30 @@
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background-image: url(../images/reviews/desktop/elizabeth-reviews-desktop@2x.jpg);
   background-size: contain;
   margin-bottom: 8px;
+  @media screen and (max-width: $mobile-max){
+    background-image: url(../images/reviews/mobile/elizabeth-reviews-mobile.jpg);
+  }
   @media screen and (min-width: $tablet) {
+    background-image: url(../images/reviews/tablet/elizabeth-reviews-tablet.jpg);
     width: 151px;
     height: 151px;
   }
   @media screen and (min-width: $desktop) {
+    background-image: url(../images/reviews/desktop/elizabeth-reviews-desktop.jpg);
     width: 285px;
     height: 285px;
   }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratino: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
   .review__mask.elizabeth {
-    background-image: url(../images/reviews/mobile/elizabeth-reviews-mobile@2x.jpg);
+    @media screen and (max-width: 767px){
+      background-image: url(../images/reviews/mobile/elizabeth-reviews-mobile@2x.jpg);
+    }    
 
     @media screen and (min-width: $tablet) {
       background-image: url(../images/reviews/tablet/elizabeth-reviews-tablet@2x.jpg);
