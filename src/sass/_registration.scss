@@ -5,9 +5,8 @@
   }
     
   @media screen and (min-width: $tablet) {
-    margin-top: 20px;
-    padding-top: 93px;
-    padding-bottom: 90px;
+    padding-top: 48px;
+    padding-bottom: 78px;
 
     background-image: url('/src/images/registration/tablet/registration-donut-tablet.png'),
       url('/src/images/registration/tablet/registration-confetti-tablet.png');
@@ -27,9 +26,8 @@
   }
 
     @media screen and (min-width: $desktop) {
-    margin-top: 60px;
-    padding-top: 81px;
-    padding-bottom: 190px;
+    padding-top: 60px;
+    padding-bottom: 160px;
   
     background-image: url(./../images/registration/desktop/registration-donut-desktop.png),
     url(./../images/registration/desktop/registration-confetti-desktop.png);
@@ -73,13 +71,18 @@
 }
 
 .registration__title {
-  position: absolute;
-  left: 50%;
-  padding-top: 32px;
-  transform: translateX(-50%);
+  
   font-size: 24px;
   text-align: center;
-  
+  line-height: 2.7;
+  @media screen and (max-width: $mobile-max){
+    position: absolute;
+    left: 50%;
+    padding-top: 32px;
+    transform: translateX(-50%);
+    padding: 32px 0 0;
+    line-height: 1.25;
+  }
   @media screen and (min-width: $desktop) {
     top: 8px;
     font-size: 36px;
@@ -126,9 +129,6 @@
     line-height: 1.2;
   }
 }
-@media screen and (min-width: $tablet) {}
-
-@media screen and (min-width: $desktop) {}
 
 .registration__text {
   padding-top: 8px;
@@ -163,16 +163,11 @@
   
     &__input {
       width: 240px;
-      margin-right: 54px;
     }
   }
   
   @media screen and (min-width: $desktop) {
     padding-left: 32px;
-    
-    &__input {
-      margin-right: 24px;
-    }
   }
 }
 
@@ -233,6 +228,11 @@
     display: flex;
       align-items: center;
       margin-top: 0;
+      margin-left: 55px;
+  }
+
+  @media screen and (min-width: $desktop){
+    margin-left: 30px;
   }
 }
 
