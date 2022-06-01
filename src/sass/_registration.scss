@@ -12,18 +12,19 @@
     background-image: url('/src/images/registration/tablet/registration-donut-tablet.png'),
       url('/src/images/registration/tablet/registration-confetti-tablet.png');
     z-index: 2;
-    background-size: 196px 200px;
+
     background-position: calc(50% - 275px) calc(50% - 105px),
       calc(50% + 235px) calc(50% + 90px);
     background-repeat: no-repeat;
     background-attachment: local;
-  }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('/src/images/registration/tablet/registration-confetti-tablet@2x.png'),
-      url('/src/images/registration/tablet/registration-donut-tablet@2x.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/src/images/registration/tablet/registration-donut-tablet@2x.png'),
+        url('/src/images/registration/tablet/registration-confetti-tablet@2x.png');
+      background-size: 220px 220px, 300px 350px;
+    }
   }
 
   @media screen and (min-width: $desktop) {
@@ -33,17 +34,18 @@
 
     background-image: url('/src/images/registration/desktop/registration-donut-desktop.png'),
       url('/src/images/registration/desktop/registration-confetti-desktop.png');
-    background-position: calc(50% - 430px) calc(50% - 115px),
-      calc(50% + 360px) calc(50% + 70px);
+    background-position: calc(50% - 435px) calc(50% - 125px),
+      calc(50% + 360px) calc(50% + 75px);
     background-repeat: no-repeat;
     background-attachment: local;
-  }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('/src/images/registration/desktop/registration-donut-desktop@2x.png'),
-      url('/src/images/registration/desktop/registration-confetti-desktop@2x.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/src/images/registration/desktop/registration-donut-desktop@2x.png'),
+        url('/src/images/registration/desktop/registration-confetti-desktop@2x.png');
+      background-size: 255px 250px, 560px 580px;
+    }
   }
 }
 
