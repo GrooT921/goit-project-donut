@@ -17,3 +17,26 @@
     max-width: 1074px;
   }
 }
+
+.header__container{
+  max-width: $mobile;
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width:$mobile) and (max-width: $mobile-max) {
+      max-width: 380px;
+
+    }
+  @media screen and (min-width: $tablet) {
+    max-width: 744px;
+    padding-top: 15px;
+    padding-bottom: 90px;
+  }
+      
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+  }
+}

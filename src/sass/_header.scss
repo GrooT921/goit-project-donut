@@ -1,29 +1,48 @@
-.header__container{
-    position: relative;
-    width: 320px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 30px;
-    padding-bottom: 0px;
+// .header__container{
+            // width: 1280px;
+            //     position: relative;
+            //     height: auto;
+            //     margin: auto;
+            //     padding: 40px 15px 111px;
+    // position: relative;
+    // width: 320px;
+    // margin: auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    // padding-top: 30px;
+    // padding-bottom: 0px;
 
-    @media screen and (min-width:$tablet) and (max-width:$tablet-max) {
-        position: relative;
-        width: 769px;
-        height: auto;
-        padding-right: 32px;
-        padding-left: 32px;
-        padding-top: 15px;
-        padding-bottom: 69px;
-    }
-    @media screen and (min-width:$desktop) {
-        position: relative;
-        width: 1280px;
-        height: auto;
-        padding-top: 40px;
-        padding-bottom: 111px;
-    }
-}
+    // @media screen and (min-width:$tablet) and (max-width:$tablet-max) {
+    //     position: relative;
+    //     margin: auto;
+    //     height: auto;
+    //     padding: 15px 15px 69px;
+    
+
+    //     max-width: 744px;
+    //     width: 769px;
+    //     padding-right: 32px;
+    //     padding-left: 32px;
+    //     padding-top: 15px;
+    //     padding-bottom: 69px;
+    // }
+    // @media screen and (min-width: $mobile){
+    //     padding: 30px 15px 0;
+    //     max-width: 380px;
+    // }
+    // @media screen and (min-width: $tablet-max){
+    //     min-width: 744px;
+    //     padding: 15px 15px 90px;
+    // }
+        //   @media screen and (min-width:$mobile) and (max-width: $mobile-max) {
+        //       max-width: 380px;
+        //   }
+    // @media screen and (min-width:$tablet) {
+
+        // padding-top: 40px;
+        // padding-bottom: 111px;
+    // }
+// }
 
 .info {
     display: flex;
@@ -63,6 +82,9 @@
     /*@media screen and (min-width:$tablet) {
             margin-bottom: 20px;
         }*/
+    @media screen and (max-width: $tablet-max){
+        font-size: 16px;
+    }
     @media screen and (min-width:$desktop) {
         /*margin-bottom: 32px;*/
         font-size: 24px;
