@@ -4,7 +4,7 @@
   @media screen and (max-width: $mobile-max) {
     background-image: url('/src/images/header/mobile/donuts-mobile.png'),
       url('/src/images/background/mobile/bg-header-mobile.png');
-    background-size: auto, 100%;
+    background-size: 120px 116px, 100%;
     background-repeat: no-repeat;
     background-position: top left, top;
 
@@ -20,9 +20,9 @@
   @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
     background-image: url('/src/images/header/tablet/donuts-tablet.png'),
       url('/src/images/background/tablet/bg-header-tablet.png');
-    background-size: auto, 100%;
+    background-size: 380px 360px, 100%;
     background-repeat: no-repeat;
-    background-position: top left 85%, top;
+    background-position: top left 80%, top;
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -37,7 +37,7 @@
     background-image: url('/src/images/header/desktop/spoon-desktop.png'),
       url('/src/images/header/desktop/donuts-desktop.png'),
       url('/src/images/background/desktop/bg-header-desktop.png');
-    background-size: auto, auto, 100%;
+    background-size: 144px 450px, 720px 660px, 100%;
     background-repeat: no-repeat;
     background-position: 0 501px, top right, top;
 
@@ -46,7 +46,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url('/src/images/header/desktop/spoon-desktop@2x.png'),
-        url('/src/images/header/desktop/spoon-desktop@2x.png'),
+        url('/src/images/header/desktop/donuts-desktop@2x.png'),
         url('/src/images/background/desktop/bg-header-desktop@2x.png');
     }
   }
