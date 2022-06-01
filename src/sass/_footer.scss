@@ -67,7 +67,7 @@ screen and (min-resolution: 2dppx) {
     border-radius: 50%;
     color: $text-color;
 
-    transition-property: transform, background-color, color;
+    transition-property: transform, background-color, box-shadow, color;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
