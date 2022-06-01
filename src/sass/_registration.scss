@@ -1,9 +1,9 @@
 .registration {
   position: relative;
-  @media screen and (max-width: $mobile-max){
+  @media screen and (max-width: $mobile-max) {
     padding: 32px 0 32px;
   }
-    
+
   @media screen and (min-width: $tablet) {
     padding-top: 48px;
     padding-bottom: 78px;
@@ -11,37 +11,40 @@
     background-image: url('/src/images/registration/tablet/registration-donut-tablet.png'),
       url('/src/images/registration/tablet/registration-confetti-tablet.png');
     z-index: 2;
-    background-size: 196px 200px;
+
     background-position: calc(50% - 275px) calc(50% - 105px),
       calc(50% + 235px) calc(50% + 90px);
     background-repeat: no-repeat;
     background-attachment: local;
-  }
 
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  background-image: url('/src/images/registration/tablet/registration-confetti-tablet@2x.png'),
-  url('/src/images/registration/tablet/registration-donut-tablet@2x.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/src/images/registration/tablet/registration-donut-tablet@2x.png'),
+        url('/src/images/registration/tablet/registration-confetti-tablet@2x.png');
+      background-size: 220px 220px, 300px 350px;
+    }
   }
-
+    
     @media screen and (min-width: $desktop) {
     padding-top: 60px;
     padding-bottom: 160px;
   
-    background-image: url(./../images/registration/desktop/registration-donut-desktop.png),
-    url(./../images/registration/desktop/registration-confetti-desktop.png);
-    background-position: calc(50% - 430px) calc(50% - 115px),
-    calc(50% + 360px) calc(50% + 70px);
+    background-image: url('/src/images/registration/desktop/registration-donut-desktop.png'),
+      url('/src/images/registration/desktop/registration-confetti-desktop.png');
+    background-position: calc(50% - 435px) calc(50% - 125px),
+      calc(50% + 360px) calc(50% + 75px);
+
     background-repeat: no-repeat;
     background-attachment: local;
-    }
-  
+
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(./../images/registration/desktop/registration-donut-desktop@2x.png),
-          url(./../images/registration/desktop/registration-confetti-desktop@2x.png);
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/src/images/registration/desktop/registration-donut-desktop@2x.png'),
+        url('/src/images/registration/desktop/registration-confetti-desktop@2x.png');
+      background-size: 255px 250px, 560px 580px;
+    }
   }
 }
 
@@ -75,6 +78,7 @@
   font-size: 24px;
   text-align: center;
   line-height: 2.7;
+  
   @media screen and (max-width: $mobile-max){
     position: absolute;
     left: 50%;
@@ -83,6 +87,8 @@
     padding: 32px 0 0;
     line-height: 1.25;
   }
+
+  
   @media screen and (min-width: $desktop) {
     top: 8px;
     font-size: 36px;
@@ -96,7 +102,7 @@
   justify-content: center;
   margin-top: 40px;
   width: 114px;
-  
+
   span {
     margin-top: 20px;
   }
@@ -107,12 +113,12 @@
     text-align: right;
     margin-right: 32px;
     margin-top: 20px;
-    
+
     span {
       margin-top: 32px;
     }
   }
-  
+
   @media screen and (min-width: $desktop) {
     width: 127px;
   }
@@ -123,7 +129,7 @@
   font-size: 18px;
   line-height: 1.22;
   text-align: center;
-  
+
   @media screen and (min-width: $desktop) {
     font-size: 20px;
     line-height: 1.2;
@@ -143,7 +149,7 @@
     text-align: left;
     width: 240px;
   }
-  
+
   @media screen and (min-width: $desktop) {
     font-size: 18px;
     line-height: 1.22;
@@ -160,15 +166,14 @@
     margin-top: 0;
     padding-left: 24px;
     border-left: 1px solid rgba(171, 129, 108, 0.5);
-  
+
     &__input {
       width: 240px;
     }
   }
-  
+
   @media screen and (min-width: $desktop) {
     padding-left: 32px;
-  }
 }
 
 .registration-form__list {
@@ -204,7 +209,7 @@
   &:valid:not(:placeholder-shown) {
     border-color: green;
   }
-  
+
   &:invalid:not(:placeholder-shown) {
     border-color: red;
   }
@@ -236,12 +241,10 @@
   }
 }
 
-
-
 // @media screen and (min-width: $tablet) {
 //   .registration {
-  //     margin-top: 20px;
-  //     padding-top: 93px;
+//     margin-top: 20px;
+//     padding-top: 93px;
 //     padding-bottom: 90px;
 
 //     background-image: url('/src/images/registration/tablet/registration-donut-tablet.png'),
@@ -254,107 +257,106 @@
 //     background-attachment: local;
 //   }
 
-  // @media screen and (min-device-pixel-ratio: 2),
-  //   screen and (min-resolution: 192dpi),
-  //   screen and (min-resolution: 2dppx) {
-  //   .registration {
-  //     background-image: url('/src/images/registration/tablet/registration-confetti-tablet@2x.png'),
-  //       url('/src/images/registration/tablet/registration-donut-tablet@2x.png');
-  //   }
-  // }
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .registration {
+//     background-image: url('/src/images/registration/tablet/registration-confetti-tablet@2x.png'),
+//       url('/src/images/registration/tablet/registration-donut-tablet@2x.png');
+//   }
+// }
 
-  // .registration__container {
-  //   padding: 40px 60px;
-  //   min-height: 260px;
-  //   border-radius: 150px;
-  //   flex-direction: row;
-  // }
+// .registration__container {
+//   padding: 40px 60px;
+//   min-height: 260px;
+//   border-radius: 150px;
+//   flex-direction: row;
+// }
 
-  // .registration__time {
-  //   justify-content: end;
-  //   align-items: center;
-  //   text-align: right;
-  //   margin-right: 32px;
-  //   margin-top: 20px;
+// .registration__time {
+//   justify-content: end;
+//   align-items: center;
+//   text-align: right;
+//   margin-right: 32px;
+//   margin-top: 20px;
 
-  //   span {
-  //     margin-top: 32px;
-  //   }
-  // }
+//   span {
+//     margin-top: 32px;
+//   }
+// }
 
-  // .registration__text {
-  //   padding: 0;
-  //   border-top: 0 transparent solid;
-  //   text-align: left;
-  //   width: 240px;
-  // }
+// .registration__text {
+//   padding: 0;
+//   border-top: 0 transparent solid;
+//   text-align: left;
+//   width: 240px;
+// }
 
-  // .registration-form {
-  //   display: flex;
-  //   margin-top: 0;
-  //   padding-left: 24px;
-  //   border-left: 1px solid rgba(171, 129, 108, 0.5);
+// .registration-form {
+//   display: flex;
+//   margin-top: 0;
+//   padding-left: 24px;
+//   border-left: 1px solid rgba(171, 129, 108, 0.5);
 
-  //   &__input {
-  //     width: 240px;
-  //     margin-right: 54px;
-  //   }
-  // }
+//   &__input {
+//     width: 240px;
+//     margin-right: 54px;
+//   }
+// }
 
-  // .registration-form__list {
-  //   row-gap: 16px;
-  //   margin-top: 16px;
-  // }
-
+// .registration-form__list {
+//   row-gap: 16px;
+//   margin-top: 16px;
+// }
 
 // @media screen and (min-width: $desktop) {
 //   .registration {
-  //   margin-top: 60px;
-  //   padding-top: 81px;
-  //   padding-bottom: 190px;
+//   margin-top: 60px;
+//   padding-top: 81px;
+//   padding-bottom: 190px;
 
-  //   background-image: url(./../images/registration/desktop/registration-donut-desktop.png),
-  //     url(./../images/registration/desktop/registration-confetti-desktop.png);
-  //   background-position: calc(50% - 430px) calc(50% - 115px),
-  //     calc(50% + 360px) calc(50% + 70px);
-  //   background-repeat: no-repeat;
-  //   background-attachment: local;
-  // }
+//   background-image: url(./../images/registration/desktop/registration-donut-desktop.png),
+//     url(./../images/registration/desktop/registration-confetti-desktop.png);
+//   background-position: calc(50% - 430px) calc(50% - 115px),
+//     calc(50% + 360px) calc(50% + 70px);
+//   background-repeat: no-repeat;
+//   background-attachment: local;
+// }
 
-  // @media screen and (min-device-pixel-ratio: 2),
-  //   screen and (min-resolution: 192dpi),
-  //   screen and (min-resolution: 2dppx) {
-  //   .registration {
-  //     background-image: url(./../images/registration/desktop/registration-donut-desktop@2x.png),
-  //       url(./../images/registration/desktop/registration-confetti-desktop@2x.png);
-  //   }
-  // }
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .registration {
+//     background-image: url(./../images/registration/desktop/registration-donut-desktop@2x.png),
+//       url(./../images/registration/desktop/registration-confetti-desktop@2x.png);
+//   }
+// }
 
-  // .registration__container {
-  //   width: 822px;
-  //   margin: 0 auto;
-  //   padding: 40px 106px;
-  // }
+// .registration__container {
+//   width: 822px;
+//   margin: 0 auto;
+//   padding: 40px 106px;
+// }
 
-  // .registration__title {
-  //   top: 8px;
-  //   font-size: 36px;
-  //   line-height: 1.81;
-  // }
+// .registration__title {
+//   top: 8px;
+//   font-size: 36px;
+//   line-height: 1.81;
+// }
 
-  // .registration__details {
-  //   font-size: 20px;
-  //   line-height: 1.2;
-  // }
+// .registration__details {
+//   font-size: 20px;
+//   line-height: 1.2;
+// }
 
-  // .registration__text {
-  //   font-size: 18px;
-  //   line-height: 1.22;
-  // }
+// .registration__text {
+//   font-size: 18px;
+//   line-height: 1.22;
+// }
 
-  // .registration__time {
-  //   width: 127px;
-  // }
+// .registration__time {
+//   width: 127px;
+// }
 
 //   .registration-form {
 //     padding-left: 32px;
